@@ -1,0 +1,23 @@
+:root {
+  --bg: #0B0E13;
+  --surface: #14181F;
+  --surface-2: #1A2029;
+  --text: #E8ECF2;
+  --text-muted: #9AA4B3;
+  --text-faint: #6F7886;
+  --accent: #F4B942;
+  --accent-ink: #141414;
+  --line: rgba(255, 255, 255, .08);
+  --line-strong: rgba(255, 255, 255, .14);
+  --radius: 6px;
+  --radius-lg: 10px;
+  --font-sans: system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 34px;
+  --space-7: 48px;
+  --ease: cubic-bezier(.22, .61, .36, 1);
+}
