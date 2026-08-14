@@ -12,4 +12,4 @@ export function getCategory(slug) {
   return CATEGORIES.find((c) => c.slug === slug) || null
 }
 
-export const ALL_CATEGORIES = { slug: 'all', label: '全部', query: '' }
+export const ALL_CATEGORIES = { slug: 'all', label: '全部', query: 'weather storm clouds sky' }

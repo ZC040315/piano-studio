@@ -1,0 +1,79 @@
+/* ============ Page heads ============ */
+.page-head {
+  padding: 34px 0 4px;
+}
+
+.page-head h2 {
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: .01em;
+}
+
+.page-head p {
+  color: var(--text-muted);
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+/* ============ Empty state ============ */
+.empty {
+  padding: 80px 0 60px;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.empty h3 {
+  color: var(--text);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.empty p {
+  font-size: 14px;
+}
+
+.empty-link {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 10px 22px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  font-size: 13px;
+  color: var(--text-muted);
+  transition: color .15s, border-color .15s;
+}
+
+.empty-link:hover {
+  color: var(--text);
+  border-color: var(--text-faint);
+}
+
+/* ============ About ============ */
+.about {
+  max-width: 760px;
+  padding: 56px 0 30px;
+}
+
+.about h1 {
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: .02em;
+  margin-bottom: 36px;
+}
+
+.about section {
+  margin-bottom: 34px;
+}
+
+.about h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.about p {
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.9;
+}

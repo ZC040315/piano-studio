@@ -1,5 +1,5 @@
 const BASE = 'https://api.openverse.org/v1/images/'
-const TIMEOUT_MS = 8000
+const TIMEOUT_MS = 6000
 
 function normalizeSource(source) {
   if (!source) return 'Openverse'
@@ -14,7 +14,7 @@ function normalizeLicense(license) {
   return `CC ${parts}`
 }
 
-export async function fetchOpenversePhotos({ query, page = 1, signal, timeoutMs = TIMEOUT_MS }) {
+export async function fetchOpenversePhotos({ query, category, page = 1, signal, timeoutMs = TIMEOUT_MS }) {
   const params = new URLSearchParams({ q: query, page: String(page), per_page: '24' })
   const controller = new AbortController()
   const timer = setTimeout(() => controller.abort(), timeoutMs)
@@ -41,7 +41,7 @@ export async function fetchOpenversePhotos({ query, page = 1, signal, timeoutMs 
         thumbnail: r.thumbnail || r.url,
         image: r.url,
         location: tags.filter((n) => n.length <= 12).slice(0, 2).join(' · '),
-        category: query,
+        category: category || query,
         degraded: false,
       }
     })
