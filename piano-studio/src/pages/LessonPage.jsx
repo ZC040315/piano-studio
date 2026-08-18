@@ -5,6 +5,7 @@ import { stages } from '../data/stages.js'
 import { exercises } from '../data/exercises.js'
 import AnimatedDemo from '../components/AnimatedDemo.jsx'
 import ExerciseSection from '../components/ExerciseSection.jsx'
+import VideoBlock from '../components/VideoBlock.jsx'
 import { loadProgress, markLessonCompleted, saveProgress } from '../lib/progress.js'
 import { starsFor } from '../lib/practice.js'
 
@@ -48,6 +49,8 @@ export default function LessonPage() {
           return <p key={i}>{block.text}</p>
         })}
       </section>
+
+      <VideoBlock video={lesson.video} />
 
       <h2>跟练练习</h2>
       {lesson.exerciseIds.map((eid) => (

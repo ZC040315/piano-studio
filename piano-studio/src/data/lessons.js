@@ -10,6 +10,7 @@ export const lessons = [
       { type: 'tip', text: '先只用右手 1 指（拇指）慢慢按，把每个音的位置记住。' },
     ],
     exerciseIds: ['lesson-01-ex1', 'lesson-01-ex2'],
+    video: { bvid: 'BV1jL411w78B', aid: null, title: '新手钢琴入门教学：认识琴键和中央 C' },
   },
   {
     id: 'lesson-02', stage: 1, order: 2,
@@ -22,6 +23,7 @@ export const lessons = [
       { type: 'tip', text: '每练几分钟就放下手休息一下，手酸说明太紧张了。' },
     ],
     exerciseIds: ['lesson-02-ex1'],
+    video: { bvid: 'BV1x81EByE1k', aid: null, title: '从零开始精通钢琴：坐姿与手型' },
   },
   {
     id: 'lesson-03', stage: 1, order: 3,
@@ -33,6 +35,7 @@ export const lessons = [
       { type: 'p', text: '右手 1 指放在 do 上，依次用 1 2 3 4 5 指弹 do re mi fa sol，再倒回来。' },
     ],
     exerciseIds: ['lesson-03-ex1'],
+    video: { bvid: null, aid: null, title: '' },
   },
   {
     id: 'lesson-04', stage: 1, order: 4,
@@ -44,6 +47,7 @@ export const lessons = [
       { type: 'tip', text: '把 “1=do、2=re、3=mi……” 念顺口，练琴前先在心里默念一遍。' },
     ],
     exerciseIds: ['lesson-04-ex1'],
+    video: { bvid: 'BV1Y1CYYYEti', aid: null, title: '流行键盘弹唱教学：认识简谱' },
   },
   {
     id: 'lesson-05', stage: 1, order: 5,
@@ -55,6 +59,7 @@ export const lessons = [
       { type: 'tip', text: '长音要“稳住”，短音要“轻巧”，先数拍子再下手。' },
     ],
     exerciseIds: ['lesson-05-ex1'],
+    video: { bvid: null, aid: null, title: '' },
   },
   {
     id: 'lesson-06', stage: 1, order: 6,
@@ -66,6 +71,7 @@ export const lessons = [
       { type: 'tip', text: '练琴时心里数 “1 2 3 4”，每一拍都踩在点上。' },
     ],
     exerciseIds: ['lesson-06-ex1'],
+    video: { bvid: null, aid: null, title: '' },
   },
   {
     id: 'lesson-07', stage: 1, order: 7,
@@ -76,6 +82,7 @@ export const lessons = [
       { type: 'p', text: '半拍与一拍的组合最容易乱，先放慢速度，稳稳数拍。' },
     ],
     exerciseIds: ['lesson-07-ex1'],
+    video: { bvid: null, aid: null, title: '' },
   },
   {
     id: 'lesson-08', stage: 1, order: 8,
@@ -87,6 +94,7 @@ export const lessons = [
       { type: 'tip', text: '先听演示把旋律记在心里，再一个音一个音地跟练。' },
     ],
     exerciseIds: ['lesson-08-ex1'],
+    video: { bvid: 'BV1KcpfeoELo', aid: null, title: '零基础学钢琴《小星星》简谱教学' },
   },
   {
     id: 'lesson-09', stage: 2, order: 9,
@@ -98,6 +106,7 @@ export const lessons = [
       { type: 'tip', text: '右手上行时，1 指要从 3 指下方“钻”过去，动作要小、要平滑。' },
     ],
     exerciseIds: ['lesson-09-ex1'],
+    video: { bvid: null, aid: 668901910, title: 'C 大调与 a 小调音阶练习方法及指法' },
   },
   {
     id: 'lesson-10', stage: 2, order: 10,
@@ -109,6 +118,7 @@ export const lessons = [
       { type: 'tip', text: '哪只手弹，就只用哪只手，另一只手轻轻放在腿上。' },
     ],
     exerciseIds: ['lesson-10-ex1'],
+    video: { bvid: null, aid: null, title: '' },
   },
   {
     id: 'lesson-11', stage: 2, order: 11,
@@ -119,6 +129,7 @@ export const lessons = [
       { type: 'demo', demoKind: 'highlight', notes: '1 1 5 5 6 6 5- | 4 4 3 3 2 2 1- | 5 5 4 4 3 3 2- | 5 5 4 4 3 3 2- | 1 1 5 5 6 6 5- | 4 4 3 3 2 2 1- | 5 5 4 4 3 3 2- | 1- - -' },
     ],
     exerciseIds: ['lesson-11-ex1'],
+    video: { bvid: null, aid: null, title: '' },
   },
   {
     id: 'lesson-12', stage: 2, order: 12,
@@ -129,6 +140,7 @@ export const lessons = [
       { type: 'demo', demoKind: 'highlight', notes: '1 2 3 1 | 1 2 3 1 | 3 4 5- | 3 4 5- | 5 6 5 4 3 1 | 5 6 5 4 3 1 | 1 5 1- | 1 5 1-' },
     ],
     exerciseIds: ['lesson-12-ex1'],
+    video: { bvid: null, aid: null, title: '' },
   },
   {
     id: 'lesson-13', stage: 2, order: 13,
@@ -139,6 +151,7 @@ export const lessons = [
       { type: 'demo', demoKind: 'highlight', notes: '3 3 4 5 | 5 4 3 2 | 1 1 2 3 | 3- 2- | 3 3 4 5 | 5 4 3 2 | 1 1 2 3 | 2- 1-' },
     ],
     exerciseIds: ['lesson-13-ex1'],
+    video: { bvid: 'BV1wZ421b7ez', aid: null, title: '零基础学钢琴《欢乐颂》简谱教学' },
   },
   {
     id: 'lesson-14', stage: 2, order: 14,
@@ -150,6 +163,7 @@ export const lessons = [
       { type: 'tip', text: '休止符最容易抢拍，数到 0 的那一拍时保持安静。' },
     ],
     exerciseIds: ['lesson-14-ex1'],
+    video: { bvid: null, aid: null, title: '' },
   },
   {
     id: 'lesson-15', stage: 2, order: 15,
@@ -161,6 +175,7 @@ export const lessons = [
       { type: 'tip', text: '先弹一遍完整的旋律，再听演示感受反复怎么接。' },
     ],
     exerciseIds: ['lesson-15-ex1'],
+    video: { bvid: null, aid: null, title: '' },
   },
   {
     id: 'lesson-16', stage: 2, order: 16,
@@ -171,6 +186,7 @@ export const lessons = [
       { type: 'demo', demoKind: 'highlight', notes: '3 3 3 5 | 5 4 3 2 | 1 1 2 3 | 3 2 1- | 5 5 5 3 | 3 2 1 7, | 1 1 2 3 | 3 2 1-' },
     ],
     exerciseIds: ['lesson-16-ex1'],
+    video: { bvid: null, aid: null, title: '' },
   },
   {
     id: 'lesson-17', stage: 3, order: 17,
@@ -182,6 +198,7 @@ export const lessons = [
       { type: 'tip', text: '和弦要三个音一起按下去，先慢，确认三个手指同时发声。' },
     ],
     exerciseIds: ['lesson-17-ex1'],
+    video: { bvid: 'BV13841177Rg', aid: null, title: '钢琴即兴伴奏：万能和弦教学' },
   },
   {
     id: 'lesson-18', stage: 3, order: 18,
@@ -193,6 +210,7 @@ export const lessons = [
       { type: 'tip', text: '四个和弦之间的手位变化要小，尽量让手指“滑”过去。' },
     ],
     exerciseIds: ['lesson-18-ex1'],
+    video: { bvid: null, aid: null, title: '' },
   },
   {
     id: 'lesson-19', stage: 3, order: 19,
@@ -203,6 +221,7 @@ export const lessons = [
       { type: 'demo', demoKind: 'highlight', notes: '1 3 5 3 | 5 7 2\' 7 | 6 1\' 3\' 1\' | 4 6 1\' 6' },
     ],
     exerciseIds: ['lesson-19-ex1'],
+    video: { bvid: 'BV12vbC6uEFb', aid: null, title: '0 基础钢琴课堂：分解练习' },
   },
   {
     id: 'lesson-20', stage: 3, order: 20,
@@ -214,6 +233,7 @@ export const lessons = [
       { type: 'tip', text: '先只练左手根音连接，再加右手和弦，最后合在一起。' },
     ],
     exerciseIds: ['lesson-20-ex1'],
+    video: { bvid: null, aid: null, title: '' },
   },
   {
     id: 'lesson-21', stage: 3, order: 21,
@@ -224,6 +244,7 @@ export const lessons = [
       { type: 'demo', demoKind: 'highlight', notes: '1, 3 5 3 | 5, 7 2\' 7 | 6 1\' 3\' 1\' | 4 6 1\' 6' },
     ],
     exerciseIds: ['lesson-21-ex1'],
+    video: { bvid: null, aid: null, title: '' },
   },
   {
     id: 'lesson-22', stage: 3, order: 22,
@@ -235,6 +256,7 @@ export const lessons = [
       { type: 'tip', text: '和弦占第一拍，后面的旋律音要稳稳落在拍点上。' },
     ],
     exerciseIds: ['lesson-22-ex1'],
+    video: { bvid: null, aid: null, title: '' },
   },
   {
     id: 'lesson-23', stage: 3, order: 23,
@@ -246,6 +268,7 @@ export const lessons = [
       { type: 'tip', text: '整首曲子速度要稳，先慢速跟练三遍，再一点点提速。' },
     ],
     exerciseIds: ['lesson-23-ex1'],
+    video: { bvid: 'BV1kNe2zNEJW', aid: null, title: '零基础学钢琴《月亮代表我的心》简谱教学' },
   },
   {
     id: 'lesson-24', stage: 3, order: 24,
@@ -257,6 +280,7 @@ export const lessons = [
       { type: 'p', text: '之后可以学 Dm、Em 等新和弦，练习踏板，或直接找喜欢的歌练弹唱。' },
     ],
     exerciseIds: ['lesson-24-ex1'],
+    video: { bvid: null, aid: null, title: '' },
   },
 ]
 
