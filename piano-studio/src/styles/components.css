@@ -91,3 +91,34 @@
 }
 .sheet-chord-note { font-size: 14px; }
 .sheet-dash { color: var(--ink-muted); letter-spacing: 1px; }
+
+.practice { margin-top: 16px; }
+.practice-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+.btn-ghost {
+  background: var(--surface);
+  color: var(--wood-dark);
+  border: 1px solid var(--line);
+}
+.btn-ghost:hover { background: var(--surface-warm); }
+.practice-feedback {
+  color: var(--amber);
+  font-weight: 500;
+  font-size: 14px;
+}
+.practice-done {
+  margin-top: 14px;
+  padding: 14px 18px;
+  background: var(--surface-warm);
+  border-radius: var(--radius-inner);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: center;
+}
+.practice-done p { margin: 0; font-weight: 700; color: var(--wood-dark); }
