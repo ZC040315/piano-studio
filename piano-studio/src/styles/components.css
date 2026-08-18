@@ -1,0 +1,93 @@
+.piano-scroll {
+  overflow-x: auto;
+  padding: 12px 4px 8px;
+}
+.piano {
+  position: relative;
+  min-width: 720px;
+  height: 180px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  overflow: hidden;
+}
+.piano-key {
+  position: relative;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
+}
+.piano-key.white {
+  height: 180px;
+  background: var(--surface);
+  border-right: 1px solid var(--line);
+  border-bottom: 4px solid var(--surface-warm);
+  border-radius: 0 0 6px 6px;
+}
+.piano-key.white:first-child { border-left: 0; }
+.piano-key.black {
+  position: absolute;
+  top: 0;
+  width: 6%;
+  height: 110px;
+  background: var(--ink);
+  border-radius: 0 0 5px 5px;
+  z-index: 2;
+}
+.piano-key.black:hover { background: var(--wood-dark); }
+.piano-key:focus-visible { outline: 2px solid var(--amber); outline-offset: -2px; }
+.piano-key.is-highlight {
+  background: var(--amber);
+  animation: breathe 1.2s ease-in-out infinite;
+}
+.piano-key.is-active {
+  background: var(--wood);
+  color: #fff;
+}
+.piano-label {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  color: var(--ink-muted);
+  pointer-events: none;
+}
+.piano-key.is-highlight .piano-label { color: var(--wood-dark); font-weight: 700; }
+
+@keyframes breathe {
+  50% { filter: brightness(1.22); }
+}
+
+.sheet {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 6px;
+  padding: 10px 12px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-inner);
+  font-size: 18px;
+  min-height: 52px;
+  align-items: center;
+}
+.sheet-note {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 7px;
+  border-radius: 6px;
+  transition: background .15s, transform .15s;
+}
+.sheet-note.is-current {
+  background: var(--amber);
+  transform: scale(1.15);
+}
+.sheet-chord {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.05;
+}
+.sheet-chord-note { font-size: 14px; }
+.sheet-dash { color: var(--ink-muted); letter-spacing: 1px; }
