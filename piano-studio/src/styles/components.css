@@ -122,3 +122,44 @@
   justify-content: center;
 }
 .practice-done p { margin: 0; font-weight: 700; color: var(--wood-dark); }
+
+.back-link { display: inline-block; margin-bottom: 10px; text-decoration: none; font-size: 14px; }
+.stage-badge {
+  display: inline-block;
+  padding: 3px 12px;
+  border-radius: var(--radius-pill);
+  color: #fff;
+  font-size: 13px;
+  margin: 4px 0 8px;
+}
+.lesson-page h1 { margin: 6px 0 14px; }
+.goal {
+  margin: 0 0 18px;
+  background: var(--surface-warm);
+  border: 0;
+  font-weight: 500;
+}
+.lesson-intro { max-width: 680px; }
+.lesson-intro p { margin: 12px 0; }
+.tip {
+  border-left: 4px solid var(--amber);
+  background: var(--surface);
+  border-radius: 0 var(--radius-inner) var(--radius-inner) 0;
+  padding: 10px 14px;
+  margin: 14px 0;
+  color: var(--ink-muted);
+  font-size: 14px;
+}
+.demo { margin: 16px 0; }
+.demo-posture svg { width: 100%; max-width: 320px; height: auto; }
+.demo-posture .hand { animation: hand-breathe 2.4s ease-in-out infinite alternate; transform-origin: 160px 60px; }
+.demo-posture p { color: var(--ink-muted); font-size: 13px; margin: 6px 0 0; }
+@keyframes hand-breathe {
+  from { transform: translateY(0); }
+  to { transform: translateY(3px); }
+}
+.exercise { margin-top: 22px; }
+.exercise h3 { margin: 0 0 6px; font-family: var(--font-body); font-size: 17px; }
+.lesson-finish { text-align: center; margin-top: 32px; }
+.completed-note { color: var(--moss); font-weight: 700; font-size: 18px; }
+.muted { color: var(--ink-muted); font-size: 14px; }
