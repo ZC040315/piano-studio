@@ -57,3 +57,5 @@ src/
   styles/       # 设计令牌（tokens.css）与全局、组件、页面样式
 public/assets/  # 内置精选图片
 ```
+
+另见：[piano-studio/](piano-studio/) 零基础钢琴自学网站（独立项目）。

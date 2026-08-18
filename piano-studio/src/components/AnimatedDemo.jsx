@@ -43,7 +43,9 @@ function HighlightDemo({ notes: raw }) {
   const highlight = current ? (current.chord ?? (current.midi !== null ? [current.midi] : [])) : []
   return (
     <div className="demo demo-highlight">
-      <Piano highlight={highlight} onPlay={(m) => synthRef.current.play(m)} />
+      <div className="piano-scroll">
+        <Piano highlight={highlight} onPlay={(m) => synthRef.current.play(m)} />
+      </div>
     </div>
   )
 }
