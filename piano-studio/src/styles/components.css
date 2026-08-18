@@ -163,3 +163,157 @@
 .lesson-finish { text-align: center; margin-top: 32px; }
 .completed-note { color: var(--moss); font-weight: 700; font-size: 18px; }
 .muted { color: var(--ink-muted); font-size: 14px; }
+
+.app { min-height: 100vh; display: flex; flex-direction: column; }
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 12px 20px;
+  background: rgba(250, 246, 239, .92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+  flex-wrap: wrap;
+}
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-family: var(--font-head);
+  font-weight: 700;
+  color: var(--ink);
+  font-size: 18px;
+}
+.site-nav { display: flex; gap: 16px; }
+.site-nav a {
+  text-decoration: none;
+  color: var(--ink-muted);
+  font-size: 15px;
+  padding: 4px 2px;
+}
+.site-nav a:hover { color: var(--wood-dark); }
+.site-nav a.active { color: var(--wood-dark); border-bottom: 2px solid var(--wood); }
+.header-progress {
+  margin-left: auto;
+  font-size: 13px;
+  color: var(--ink-muted);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-pill);
+  padding: 4px 12px;
+}
+.storage-hint {
+  flex-basis: 100%;
+  margin: 0;
+  color: var(--amber);
+  font-size: 13px;
+}
+.site-footer {
+  margin-top: auto;
+  text-align: center;
+  color: var(--ink-muted);
+  font-size: 13px;
+  padding: 22px 16px;
+  border-top: 1px solid var(--line);
+}
+.site-footer p { margin: 4px 0; }
+
+.hero {
+  text-align: center;
+  padding: 56px 16px 40px;
+}
+.hero h1 { font-size: 38px; margin: 0 0 12px; }
+.hero-sub { color: var(--ink-muted); max-width: 520px; margin: 0 auto 22px; }
+
+.continue {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+.continue p { margin: 0; font-weight: 700; }
+
+.stages h2, .tips h2 { font-size: 22px; }
+.stage-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+.stage-card {
+  text-decoration: none;
+  color: var(--ink);
+  transition: transform .15s, box-shadow .15s;
+}
+.stage-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(107, 94, 82, .12); }
+.stage-card h3 { margin: 8px 0 6px; }
+.stage-card p { color: var(--ink-muted); font-size: 14px; margin: 0; }
+.tips { margin-top: 28px; }
+.tips ul { padding-left: 20px; }
+
+.progress-bar {
+  height: 6px;
+  border-radius: var(--radius-pill);
+  background: var(--surface-warm);
+  overflow: hidden;
+  margin: 8px 0 4px;
+}
+.progress-bar span { display: block; height: 100%; background: var(--wood); border-radius: var(--radius-pill); }
+.stage-group { margin-top: 26px; }
+.stage-group h2 { font-size: 20px; }
+.stage-group h2 small { font-family: var(--font-body); color: var(--ink-muted); font-size: 13px; font-weight: 400; }
+.lesson-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 14px;
+}
+.lesson-card {
+  position: relative;
+  text-decoration: none;
+  color: var(--ink);
+  transition: transform .15s, box-shadow .15s;
+  display: block;
+}
+.lesson-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(107, 94, 82, .12); }
+.lesson-no { font-size: 12px; color: var(--ink-muted); }
+.lesson-card h3 { margin: 4px 0 6px; font-size: 17px; }
+.lesson-card p { margin: 0; color: var(--ink-muted); font-size: 13px; }
+.done-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: var(--moss);
+  color: #fff;
+  font-size: 12px;
+  padding: 2px 10px;
+  border-radius: var(--radius-pill);
+}
+
+.guide-page .card { margin-bottom: 18px; }
+.sheet-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+.sheet-table th, .sheet-table td {
+  border: 1px solid var(--line);
+  padding: 8px 10px;
+  text-align: left;
+}
+.sheet-table th { background: var(--surface-warm); }
+.sheet-table tr:nth-child(even) td { background: rgba(243, 234, 224, .4); }
+.guide-page dl { margin: 0; }
+.guide-page dt { font-weight: 700; margin-top: 10px; }
+.guide-page dd { margin: 2px 0 0; color: var(--ink-muted); font-size: 14px; }
+
+@media (max-width: 640px) {
+  .hero h1 { font-size: 28px; }
+  .hero { padding: 36px 8px 28px; }
+  .site-header { gap: 10px; padding: 10px 14px; }
+  .header-progress { margin-left: 0; }
+}
