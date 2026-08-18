@@ -1,0 +1,27 @@
+@import './tokens.css';
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.7;
+}
+h1, h2, h3 { font-family: var(--font-head); line-height: 1.35; }
+a { color: var(--wood-dark); }
+.page { max-width: 960px; margin: 0 auto; padding: 24px 20px 72px; }
+.btn {
+  display: inline-block; padding: 10px 20px; border-radius: var(--radius-pill);
+  background: var(--wood); color: #fff; text-decoration: none; font-weight: 500;
+  border: 0; cursor: pointer; font-size: 15px;
+}
+.btn:hover { background: var(--wood-dark); }
+.card {
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--radius-card); padding: 20px;
+}
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}

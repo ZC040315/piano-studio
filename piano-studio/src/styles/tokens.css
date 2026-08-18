@@ -1,0 +1,17 @@
+:root {
+  --bg: #FAF6EF;
+  --surface: #FFFFFF;
+  --surface-warm: #F3EAE0;
+  --ink: #3D3A36;
+  --ink-muted: #8A8178;
+  --wood: #8B6B52;
+  --wood-dark: #6E5340;
+  --moss: #6B7A5E;
+  --amber: #D9A066;
+  --line: rgba(107, 94, 82, .14);
+  --radius-card: 12px;
+  --radius-pill: 999px;
+  --radius-inner: 8px;
+  --font-head: 'Noto Serif SC', 'Songti SC', 'SimSun', serif;
+  --font-body: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
