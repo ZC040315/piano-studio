@@ -29,7 +29,7 @@
 .piano-key.black {
   position: absolute;
   top: 0;
-  width: 6%;
+  width: 3.6%;
   height: 110px;
   background: var(--ink);
   border-radius: 0 0 5px 5px;
