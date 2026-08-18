@@ -36,6 +36,13 @@ describe('parseExercise', () => {
     expect(out.map(n => n.midi)).toEqual([60, 60, 67, 67, 69, 69, 67])
     expect(out[6].beats).toBe(2)
   })
+
+  it('解析升号与降号', () => {
+    const out = parseExercise('3 2# 3 2# 3 7 2 1 6 | 1 3 6 7 3 5# 7 1\'')
+    expect(out.map((n) => n.midi)).toEqual([64, 63, 64, 63, 64, 71, 62, 60, 69, 60, 64, 69, 71, 64, 68, 71, 72])
+    expect(out[1].label).toBe('2#')
+    expect(parseExercise('b7')[0].midi).toBe(70)
+  })
 })
 
 describe('midiToFreq', () => {
