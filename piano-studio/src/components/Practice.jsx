@@ -7,8 +7,11 @@ import { createInitialPractice, practiceReducer, starsFor } from '../lib/practic
 import { createPianoSynth } from '../lib/audio.js'
 import { KEY_TO_MIDI } from '../lib/keys.js'
 
-export default function Practice({ exerciseId, onComplete }) {
-  const notes = useMemo(() => getExerciseNotes(exerciseId), [exerciseId])
+export default function Practice({ exerciseId, notesProp, onComplete }) {
+  const notes = useMemo(
+    () => notesProp ?? getExerciseNotes(exerciseId),
+    [exerciseId, notesProp],
+  )
   const [state, dispatch] = useReducer(practiceReducer, notes, createInitialPractice)
   const [demoRun, setDemoRun] = useState(false)
   const [wrongTick, setWrongTick] = useState(0)

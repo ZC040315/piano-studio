@@ -31,6 +31,7 @@ export default function Header() {
       <nav className="site-nav">
         <NavLink to="/">首页</NavLink>
         <NavLink to="/lessons">课程</NavLink>
+        <NavLink to="/scores">曲谱库</NavLink>
         <NavLink to="/guide">学习指南</NavLink>
       </nav>
       <span className="header-progress">已完成 {doneCount}/{lessons.length}</span>

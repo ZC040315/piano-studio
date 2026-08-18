@@ -21,6 +21,12 @@ export default function HomePage() {
         </section>
       )}
 
+      <section className="scores-entry card">
+        <h2>曲谱库</h2>
+        <p>30 首流行歌曲与纯音乐简谱，点开就能跟练。</p>
+        <Link className="btn" to="/scores">打开曲谱库</Link>
+      </section>
+
       <section className="stages">
         <h2>三阶段学习路径</h2>
         <div className="stage-grid">

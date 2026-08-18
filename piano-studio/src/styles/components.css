@@ -331,6 +331,52 @@
 .video-title { font-weight: 700; margin: 10px 0 4px; }
 .video-pending { background: var(--surface-warm); border-style: dashed; text-align: center; }
 
+.filter-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 18px 0;
+}
+.filter-tab {
+  background: var(--surface);
+  color: var(--wood-dark);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-pill);
+  padding: 8px 18px;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: inherit;
+}
+.filter-tab:hover { background: var(--surface-warm); }
+.filter-tab.is-active {
+  background: var(--wood);
+  border-color: var(--wood);
+  color: #fff;
+}
+.pending-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: var(--amber);
+  color: #fff;
+  font-size: 12px;
+  padding: 2px 10px;
+  border-radius: var(--radius-pill);
+}
+.source-note {
+  color: var(--amber);
+  font-size: 13px;
+  margin: 2px 0 0;
+}
+.scores-entry { margin-top: 24px; }
+.scores-entry p { color: var(--ink-muted); }
+.pending-card {
+  margin-top: 18px;
+  background: var(--surface-warm);
+  border-style: dashed;
+  text-align: center;
+}
+
 @media (max-width: 640px) {
   .hero h1 { font-size: 28px; }
   .hero { padding: 36px 8px 28px; }

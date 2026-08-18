@@ -5,6 +5,8 @@ import HomePage from './pages/HomePage.jsx'
 import LessonsPage from './pages/LessonsPage.jsx'
 import LessonPage from './pages/LessonPage.jsx'
 import GuidePage from './pages/GuidePage.jsx'
+import ScoresPage from './pages/ScoresPage.jsx'
+import ScorePage from './pages/ScorePage.jsx'
 
 function NotFound() {
   return (
@@ -23,6 +25,8 @@ export default function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/lessons" element={<LessonsPage />} />
         <Route path="/lessons/:id" element={<LessonPage />} />
+        <Route path="/scores" element={<ScoresPage />} />
+        <Route path="/scores/:id" element={<ScorePage />} />
         <Route path="/guide" element={<GuidePage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
